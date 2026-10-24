@@ -1,0 +1,7 @@
+{
+  "framework": "nextjs",
+  "functions": {
+    "src/app/api/setup/route.ts": { "includeFiles": "backups/damascus-flowers-catalog-export.json", "maxDuration": 60 },
+    "src/app/api/admin/upload/route.ts": { "maxDuration": 30 }
+  }
+}

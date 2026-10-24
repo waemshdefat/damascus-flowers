@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
     unoptimized: false,
+    remotePatterns: [
+      { protocol: "https", hostname: "res.cloudinary.com" },
+      { protocol: "https", hostname: "damascusflowers.com" },
+    ],
   },
   async headers() {
     return [

@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --bg-ivory: #FAF7F2;
+  --bg-cream: #F3ECE2;
+  --bg-blush: #F7E8EB;
+  --surface-card: #FFFDFB;
+  --ink-espresso: #3D2B1F;
+  --ink-cocoa: #695244;
+  --accent-rose: #C47D8A;
+  --accent-gold: #B8965A;
+  --border-sand: #E6DDD0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-ivory);
+  color: var(--ink-espresso);
+}
+
+body {
+  background-color: var(--bg-ivory);
+  color: var(--ink-espresso);
+  font-feature-settings: "kern" 1;
+}
+
+.font-brand-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.gold-hairline {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(184, 150, 90, 0.55) 50%,
+    transparent 100%
+  );
+}
+
+@keyframes gentleFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: gentleFadeUp 0.55s ease-out both;
+}

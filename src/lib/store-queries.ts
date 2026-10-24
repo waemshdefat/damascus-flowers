@@ -2,9 +2,19 @@ import { db } from "@/db";
 import { ensureSeeded } from "@/db/seed";
 import { categories, products, storeSettings } from "@/db/schema";
 import { asc, eq } from "drizzle-orm";
+import { INITIAL_CATEGORIES, INITIAL_PRODUCTS } from "@/db/seed-data";
+
+function logDbError(where: string, err: unknown) {
+  console.error(`[store-queries] ${where} failed:`, err instanceof Error ? err.message : err);
+}
 
 export async function getPublicStoreSettings() {
-  await ensureSeeded();
+  try {
+    await ensureSeeded();
+  } catch (err) {
+    logDbError("getPublicStoreSettings/seed", err);
+    return null;
+  }
   const [row] = await db
     .select({
       storeNameAr: storeSettings.storeNameAr,
@@ -26,32 +36,62 @@ export async function getPublicStoreSettings() {
     })
     .from(storeSettings)
     .where(eq(storeSettings.id, 1))
-    .limit(1);
+    .limit(1)
+    .catch((err) => {
+      logDbError("getPublicStoreSettings", err);
+      return [] as never[];
+    });
 
-  return row;
+  return row ?? null;
 }
 
 export async function getActiveCategories() {
-  await ensureSeeded();
-  return db
-    .select()
-    .from(categories)
-    .where(eq(categories.isActive, true))
-    .orderBy(asc(categories.sortOrder), asc(categories.id));
+  try {
+    await ensureSeeded();
+    return await db
+      .select()
+      .from(categories)
+      .where(eq(categories.isActive, true))
+      .orderBy(asc(categories.sortOrder), asc(categories.id));
+  } catch (err) {
+    logDbError("getActiveCategories", err);
+    return INITIAL_CATEGORIES.map((c, i) => ({ id: i + 1, isActive: true, createdAt: new Date(), ...c }));
+  }
 }
 
 export async function getActiveProducts() {
-  await ensureSeeded();
-  return db
-    .select()
-    .from(products)
-    .where(eq(products.isActive, true))
-    .orderBy(asc(products.sortOrder), asc(products.id));
+  try {
+    await ensureSeeded();
+    return await db
+      .select()
+      .from(products)
+      .where(eq(products.isActive, true))
+      .orderBy(asc(products.sortOrder), asc(products.id));
+  } catch (err) {
+    logDbError("getActiveProducts", err);
+    return INITIAL_PRODUCTS.map((p, i) => ({
+      id: i + 1,
+      compareAtPriceJod: p.compareAtPriceJod ?? null,
+      badgeTextAr: p.badgeTextAr ?? "",
+      isAddon: p.isAddon ?? false,
+      isActive: true,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      ...p,
+    }));
+  }
 }
 
 export async function getProductBySlugOrLegacy(rawSlug: string) {
-  await ensureSeeded();
   const decoded = decodeURIComponent(rawSlug).trim();
+  try {
+    await ensureSeeded();
+  } catch (err) {
+    logDbError("getProductBySlugOrLegacy/seed", err);
+    const all = await getActiveProducts();
+    const found = all.find((p) => p.slug === decoded || p.legacySlugs.includes(decoded));
+    return { product: found ?? null, matchedLegacy: Boolean(found && found.slug !== decoded) };
+  }
 
   const [exact] = await db
     .select()

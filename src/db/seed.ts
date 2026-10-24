@@ -7,6 +7,7 @@ import {
   INITIAL_PRODUCTS,
 } from "./seed-data";
 import { count } from "drizzle-orm";
+import { ensureSchema } from "./ensure-schema";
 
 let seedPromise: Promise<void> | null = null;
 
@@ -22,6 +23,7 @@ export async function ensureSeeded(): Promise<void> {
 }
 
 async function runSeed(): Promise<void> {
+  await ensureSchema();
   const [{ value: catCount }] = await db.select({ value: count() }).from(categories);
   if (catCount === 0) {
     await db

@@ -100,6 +100,16 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
 
   return (
     <html lang="ar" dir="rtl" className={`${tajawal.variable} ${cormorant.variable}`}>
+      <head>
+        <meta name="theme-color" content="#FAF7F2" />
+        {/* Critical fallback styles: guarantee visible content on very old browsers even if the main CSS is unsupported */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "html,body{background:#FAF7F2;color:#3D2B1F;margin:0;min-height:100%;-webkit-text-size-adjust:100%}img{max-width:100%;height:auto}a{color:inherit}",
+          }}
+        />
+      </head>
       <body
         style={{ fontFamily: "var(--font-tajawal), sans-serif" }}
         className="min-h-screen flex flex-col bg-[#FAF7F2] text-[#3D2B1F] antialiased selection:bg-[#F5E1E4] selection:text-[#3D2B1F]"

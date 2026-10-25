@@ -28,7 +28,7 @@ export function FloatingWhatsApp({
       target="_blank"
       rel="noopener noreferrer"
       aria-label="تواصل واطلب عبر واتساب"
-      className="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#1F8E4D] hover:bg-[#197840] text-white shadow-lg shadow-black/15 transition-transform duration-200 hover:-translate-y-0.5"
+      className="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#EFF9F2] hover:bg-[#DDF2E3] text-[#175933] border border-[#BFE5CA] shadow-lg shadow-black/15 transition-transform duration-200 hover:-translate-y-0.5"
     >
       <MessageCircle className="w-5 h-5 shrink-0" />
       <span className="text-xs sm:text-sm font-bold">واتساب الطلبات</span>

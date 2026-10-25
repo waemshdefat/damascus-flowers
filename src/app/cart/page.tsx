@@ -60,7 +60,7 @@ export default function CartPage() {
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Link
               href="/shop"
-              className="px-7 py-3.5 rounded-2xl bg-[#3D2B1F] text-[#FAF7F2] font-bold text-sm hover:bg-[#523A2B] transition"
+              className="px-7 py-3.5 rounded-2xl bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] font-bold text-sm hover:bg-[#F5E1E4] transition"
             >
               تصفح المتجر الآن
             </Link>
@@ -188,7 +188,7 @@ export default function CartPage() {
 
             <Link
               href="/checkout"
-              className="w-full py-4 px-6 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-[#FAF7F2] font-bold text-base flex items-center justify-center gap-2 transition shadow-sm"
+              className="w-full py-4 px-6 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs font-bold text-base flex items-center justify-center gap-2 transition shadow-sm"
             >
               <span>المتابعة لإتمام الطلب</span>
               <ArrowLeft className="w-4 h-4" />

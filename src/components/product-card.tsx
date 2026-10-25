@@ -79,13 +79,13 @@ export function ProductCard({
         )}
 
         {badgeLabel && product.inStock && (
-          <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-extrabold bg-[#B8232F] text-white shadow-sm tracking-wide">
+          <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-extrabold bg-[#FBE9EB] text-[#B8232F] border border-[#E8B4BB] shadow-xs tracking-wide">
             {badgeLabel}
           </span>
         )}
 
         {!product.inStock && (
-          <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-rose-900/90 text-white">
+          <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold bg-[#FBE9EB] text-[#B8232F] border border-[#E8B4BB]">
             نفد حاليًا
           </span>
         )}
@@ -137,7 +137,7 @@ export function ProductCard({
                   image: primaryImg,
                 })
               }
-              className="flex-1 py-2.5 px-2.5 sm:px-3.5 rounded-xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] text-[11px] sm:text-sm font-bold inline-flex items-center justify-center gap-1.5 sm:gap-2 transition cursor-pointer disabled:cursor-not-allowed"
+              className="flex-1 py-2.5 px-2.5 sm:px-3.5 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#C9BBAE] text-[11px] sm:text-sm font-bold inline-flex items-center justify-center gap-1.5 sm:gap-2 transition cursor-pointer disabled:cursor-not-allowed"
             >
               <ShoppingBag className="w-4 h-4 shrink-0" />
               <span>{product.inStock ? "أضف للسلة" : "غير متوفر"}</span>

@@ -187,7 +187,7 @@ export function ShopFilterClient({
               setSelectedCategory("all");
               setQuery("");
             }}
-            className="px-6 py-2.5 rounded-full bg-[#3D2B1F] text-white text-sm font-bold cursor-pointer"
+            className="px-6 py-2.5 rounded-full bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] text-sm font-bold cursor-pointer"
           >
             إظهار كافة المنتجات
           </button>

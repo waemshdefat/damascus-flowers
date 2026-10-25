@@ -177,7 +177,7 @@ export function SiteFooter({
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1F8E4D] hover:bg-[#197840] text-xs font-medium text-white transition"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#EFF9F2] hover:bg-[#DDF2E3] text-xs font-medium text-[#175933] border border-[#BFE5CA] transition"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>واتساب مباشر</span>
@@ -213,13 +213,6 @@ export function SiteFooter({
           </p>
           <div className="flex items-center gap-4">
             <span>الدفع عند الاستلام متاح</span>
-            <span>•</span>
-            <Link
-              href="/admin"
-              className="inline-flex items-center gap-1 text-[#5C4332] hover:text-[#3D2B1F] transition"
-            >
-              <span>لوحة الإدارة</span>
-            </Link>
           </div>
         </div>
       </div>

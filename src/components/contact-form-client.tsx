@@ -55,7 +55,7 @@ export function ContactFormClient() {
             href={sentWaUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl bg-[#1F8E4D] text-white text-sm font-bold inline-flex items-center gap-2"
+            className="px-6 py-3 rounded-xl bg-[#EFF9F2] text-[#175933] border border-[#BFE5CA] text-sm font-bold inline-flex items-center gap-2"
           >
             <MessageCircle className="w-4 h-4" />
             <span>متابعة الرسالة عبر واتساب</span>
@@ -146,7 +146,7 @@ export function ContactFormClient() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full py-4 px-6 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:opacity-60 text-[#FAF7F2] font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
+        className="w-full py-4 px-6 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:opacity-60 font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
       >
         <Send className="w-4 h-4" />
         <span>{sending ? "جاري الإرسال..." : "إرسال الرسالة"}</span>

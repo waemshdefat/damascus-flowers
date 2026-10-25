@@ -95,7 +95,7 @@ export function ProductDetailInteractive({
       <div className="lg:col-span-6 space-y-4">
         <div className="relative aspect-4/5 rounded-3xl overflow-hidden bg-white border border-[#EAE0D3] shadow-xs">
           {badgeLabel && (
-            <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-full text-sm font-extrabold bg-[#B8232F] text-white shadow">
+            <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-full text-sm font-extrabold bg-[#FBE9EB] text-[#B8232F] border border-[#E8B4BB] shadow-xs">
               {badgeLabel}
             </span>
           )}
@@ -194,7 +194,7 @@ export function ProductDetailInteractive({
                 type="button"
                 disabled={!product.inStock}
                 onClick={handleAdd}
-                className="py-4 px-5 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
+                className="py-4 px-5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#C9BBAE] font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
               >
                 {addedFeedback ? (
                   <>
@@ -224,7 +224,7 @@ export function ProductDetailInteractive({
               href={waDirectUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-3.5 px-5 rounded-2xl bg-[#1F8E4D] hover:bg-[#197840] text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 transition shadow-xs"
+              className="w-full py-3.5 px-5 rounded-2xl bg-[#EFF9F2] hover:bg-[#DDF2E3] text-[#175933] border border-[#BFE5CA] font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 transition shadow-xs"
             >
               <MessageCircle className="w-5 h-5" />
               <span>أرسل طلب هذا المنتج عبر واتساب</span>

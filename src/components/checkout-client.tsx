@@ -233,7 +233,7 @@ export function CheckoutClient({
               href={submittedResult.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 min-w-60 py-4 px-6 rounded-2xl bg-[#EFF9F2] hover:bg-[#DDF2E3] text-[#175933] border border-[#BFE5CA] font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-sm transition"
+              className="flex-1 min-w-60 py-4 px-6 rounded-2xl bg-[#1F8E4D] hover:bg-[#197840] text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-sm transition"
             >
               <MessageCircle className="w-5 h-5" />
               <span>إرسال تفاصيل الطلب عبر واتساب الآن</span>
@@ -273,7 +273,7 @@ export function CheckoutClient({
         <div className="pt-2 flex flex-wrap gap-3">
           <Link
             href="/shop"
-            className="px-6 py-3 rounded-xl bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] text-sm font-bold hover:bg-[#F5E1E4] transition"
+            className="px-6 py-3 rounded-xl bg-[#3D2B1F] text-[#FAF7F2] text-sm font-bold hover:bg-[#523A2B] transition"
           >
             متابعة التسوق
           </Link>
@@ -484,7 +484,7 @@ export function CheckoutClient({
                             false
                           )
                         }
-                        className="px-3.5 py-2 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs font-bold inline-flex items-center gap-1 shrink-0 cursor-pointer"
+                        className="px-3.5 py-2 rounded-xl bg-[#3D2B1F] hover:bg-[#523A2B] text-white text-xs font-bold inline-flex items-center gap-1 shrink-0 cursor-pointer"
                       >
                         <PlusCircle className="w-3.5 h-3.5" />
                         <span>إضافة</span>
@@ -845,7 +845,7 @@ export function CheckoutClient({
         <button
           type="submit"
           disabled={submitting || items.length === 0}
-          className="w-full py-4 px-6 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#C9BBAE] font-extrabold text-base transition shadow-md cursor-pointer disabled:cursor-not-allowed"
+          className="w-full py-4 px-6 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] font-extrabold text-base transition shadow-md cursor-pointer disabled:cursor-not-allowed"
         >
           {submitting
             ? "جاري تسجيل الطلب..."

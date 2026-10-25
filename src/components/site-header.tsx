@@ -155,7 +155,7 @@ export function SiteHeader({
             >
               <ShoppingBag className="w-4 h-4" />
               <span className="hidden sm:inline">السلة</span>
-              <span className="min-w-5 h-5 px-1.5 rounded-full bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] text-xs font-bold inline-flex items-center justify-center">
+              <span className="min-w-5 h-5 px-1.5 rounded-full bg-[#3D2B1F] text-[#FAF7F2] text-xs font-bold inline-flex items-center justify-center">
                 {totalCount}
               </span>
             </button>
@@ -167,7 +167,7 @@ export function SiteHeader({
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-50 xl:hidden">
           <div
-            className="fixed inset-0 bg-[#3D2B1F]/15 backdrop-blur-sm"
+            className="fixed inset-0 bg-[#261A12]/50 backdrop-blur-xs"
             onClick={() => setMobileMenuOpen(false)}
           />
           <aside className="fixed inset-y-0 right-0 w-[85%] max-w-sm bg-[#FAF7F2] shadow-2xl border-l border-[#E6DDD0] flex flex-col justify-between p-6 overflow-y-auto">
@@ -239,7 +239,7 @@ export function SiteHeader({
                 href={quickWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-xl bg-[#EFF9F2] text-[#175933] border border-[#BFE5CA] font-bold flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition"
+                className="w-full py-3 px-4 rounded-xl bg-[#25D366] text-white font-bold flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>اطلب مباشرة عبر واتساب</span>

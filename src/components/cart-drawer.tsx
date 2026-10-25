@@ -23,7 +23,7 @@ export function CartDrawer() {
   return (
     <div className="fixed inset-0 z-50">
       <div
-        className="fixed inset-0 bg-[#3D2B1F]/15 backdrop-blur-sm"
+        className="fixed inset-0 bg-[#261A12]/45 backdrop-blur-xs"
         onClick={closeDrawer}
       />
 
@@ -65,7 +65,7 @@ export function CartDrawer() {
               <Link
                 href="/shop"
                 onClick={closeDrawer}
-                className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] text-sm font-medium hover:bg-[#F5E1E4] transition"
+                className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#3D2B1F] text-white text-sm font-medium hover:bg-[#523A2B] transition"
               >
                 تصفح المتجر
               </Link>
@@ -166,7 +166,7 @@ export function CartDrawer() {
               <Link
                 href="/checkout"
                 onClick={closeDrawer}
-                className="py-3 px-4 rounded-xl bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] text-sm font-bold text-center hover:bg-[#F5E1E4] transition shadow-sm"
+                className="py-3 px-4 rounded-xl bg-[#3D2B1F] text-[#FAF7F2] text-sm font-bold text-center hover:bg-[#523A2B] transition shadow-sm"
               >
                 إتمام الطلب
               </Link>

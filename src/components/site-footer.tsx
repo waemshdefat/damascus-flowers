@@ -177,7 +177,7 @@ export function SiteFooter({
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#EFF9F2] hover:bg-[#DDF2E3] text-xs font-medium text-[#175933] border border-[#BFE5CA] transition"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#1F8E4D] hover:bg-[#197840] text-xs font-medium text-white transition"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>واتساب مباشر</span>
@@ -207,13 +207,25 @@ export function SiteFooter({
         </div>
 
         <div className="mt-12 pt-6 border-t border-[#E6DDD0] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7D6352]">
-          <p>
-            © {new Date().getFullYear()} {storeNameAr} | {storeNameEn}. جميع الحقوق
-            محفوظة.
+          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center sm:text-right">
+            {/* Discreet admin entry: the © year opens the admin panel (no visible "admin" label) */}
+            <Link
+              href="/admin"
+              aria-label="إدارة المتجر"
+              className="font-bold text-[#3D2B1F] hover:text-[#965866] transition cursor-default"
+            >
+              © {new Date().getFullYear()}
+            </Link>
+            <span className="font-bold text-[#3D2B1F]">{storeNameAr}</span>
+            <span className="text-[#B8965A]">|</span>
+            <span dir="ltr" className="font-brand-serif tracking-[0.18em] uppercase text-[#5C4332]">
+              {storeNameEn}
+            </span>
+            <span className="hidden sm:inline text-[#B8965A]">·</span>
+            <span>جميع الحقوق محفوظة</span>
           </p>
-          <div className="flex items-center gap-4">
-            <span>الدفع عند الاستلام متاح</span>
-          </div>
+
+          <span>الدفع عند الاستلام متاح</span>
         </div>
       </div>
     </footer>

@@ -101,7 +101,7 @@ export default async function AboutPage() {
       <div className="text-center flex flex-wrap justify-center gap-4">
         <Link
           href="/shop"
-          className="px-8 py-4 rounded-2xl bg-[#FFFDFB] text-[#3D2B1F] border border-[#D8C7B4] font-bold text-sm sm:text-base hover:bg-[#F5E1E4] transition"
+          className="px-8 py-4 rounded-2xl bg-[#3D2B1F] text-[#FAF7F2] font-bold text-sm sm:text-base hover:bg-[#523A2B] transition"
         >
           تصفح تشكيلة الزهور والهدايا
         </Link>
@@ -109,7 +109,7 @@ export default async function AboutPage() {
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-4 rounded-2xl bg-[#EFF9F2] text-[#175933] border border-[#BFE5CA] font-bold text-sm sm:text-base inline-flex items-center gap-2 hover:bg-[#197840] transition"
+          className="px-8 py-4 rounded-2xl bg-[#1F8E4D] text-white font-bold text-sm sm:text-base inline-flex items-center gap-2 hover:bg-[#197840] transition"
         >
           <MessageCircle className="w-5 h-5" />
           <span>تواصل معنا عبر واتساب</span>

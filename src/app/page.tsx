@@ -267,7 +267,7 @@ export default async function HomePage() {
         <div className="text-center">
           <Link
             href="/shop"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-[#3D2B1F] text-[#3D2B1F] hover:bg-[#F5E1E4] font-bold text-sm transition"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-[#3D2B1F] text-[#3D2B1F] hover:bg-[#3D2B1F] hover:text-[#FAF7F2] font-bold text-sm transition"
           >
             <span>تصفح المتجر والفلترة حسب القسم أو السعر</span>
             <ArrowLeft className="w-4 h-4" />

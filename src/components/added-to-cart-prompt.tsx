@@ -15,7 +15,7 @@ export function AddedToCartPrompt() {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-end sm:items-center justify-center p-4">
-      <div className="fixed inset-0 bg-[#3D2B1F]/15 backdrop-blur-sm" onClick={dismissAddedPrompt} />
+      <div className="fixed inset-0 bg-[#261A12]/45 backdrop-blur-xs" onClick={dismissAddedPrompt} />
 
       <div
         role="dialog"
@@ -71,7 +71,7 @@ export function AddedToCartPrompt() {
             onClick={() => {
               dismissAddedPrompt();
             }}
-            className="py-3.5 px-4 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm font-bold text-center inline-flex items-center justify-center gap-2 transition shadow-sm"
+            className="py-3.5 px-4 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-[#FAF7F2] text-sm font-bold text-center inline-flex items-center justify-center gap-2 transition shadow-sm"
           >
             <ShoppingBag className="w-4 h-4" />
             <span>عرض السلة وإتمام الطلب</span>

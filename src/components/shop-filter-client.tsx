@@ -109,7 +109,7 @@ export function ShopFilterClient({
             onClick={() => setSelectedCategory("all")}
             className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition cursor-pointer ${
               selectedCategory === "all"
-                ? "bg-[#3D2B1F] text-[#FAF7F2]"
+                ? "bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8A7B0]"
                 : "bg-[#FAF7F2] text-[#5C4332] hover:bg-[#F3ECE2] border border-[#E6DDD0]"
             }`}
           >
@@ -131,7 +131,7 @@ export function ShopFilterClient({
                 onClick={() => setSelectedCategory(cat.slug)}
                 className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition cursor-pointer ${
                   active
-                    ? "bg-[#3D2B1F] text-[#FAF7F2]"
+                    ? "bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8A7B0]"
                     : "bg-[#FAF7F2] text-[#5C4332] hover:bg-[#F3ECE2] border border-[#E6DDD0]"
                 }`}
               >

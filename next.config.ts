@@ -20,11 +20,6 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        // HTML pages: always revalidate (prevents Safari from showing a stale/broken cached page)
-        source: "/((?!_next/|images/|downloads/|icon|apple-icon|favicon).*)",
-        headers: [{ key: "Cache-Control", value: "private, no-cache, must-revalidate" }],
-      },
-      {
         source: "/admin/:path*",
         headers: [
           { key: "X-Robots-Tag", value: "noindex, nofollow" },

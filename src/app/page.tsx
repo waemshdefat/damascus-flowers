@@ -98,7 +98,7 @@ export default async function HomePage() {
               <div className="flex flex-wrap items-center gap-3.5 pt-2">
                 <Link
                   href="/shop"
-                  className="px-7 py-4 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-[#FAF7F2] text-sm sm:text-base font-bold inline-flex items-center gap-2.5 shadow-md shadow-[#3D2B1F]/15 transition"
+                  className="px-7 py-4 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm sm:text-base font-bold inline-flex items-center gap-2.5 transition"
                 >
                   <span>تسوق الباقات والهدايا</span>
                   <ArrowLeft className="w-4 h-4" />
@@ -295,7 +295,7 @@ export default async function HomePage() {
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">
             <Link
               href="/checkout"
-              className="py-4 px-6 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-[#FAF7F2] font-bold text-center transition shadow-sm"
+              className="py-4 px-6 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs font-bold text-center transition"
             >
               ابدأ تجهيز طلبك الآن
             </Link>

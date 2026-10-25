@@ -453,13 +453,13 @@ export function AdminDashboardClient({
   return (
     <div className="min-h-screen bg-[#FAF7F2] pb-20">
       {/* Admin Top Header */}
-      <header className="sticky top-0 z-30 bg-[#3D2B1F] text-[#FAF7F2] border-b border-[#533B2B]">
+      <header className="sticky top-0 z-30 bg-[#F3ECE2] text-[#3D2B1F] border-b border-[#E6DDD0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <span className="font-extrabold text-base sm:text-lg">
               إدارة أزهار دمشق
             </span>
-            <span className="hidden sm:inline-block text-xs px-2.5 py-0.5 rounded-full bg-[#533B2B] text-[#F5E1E4]">
+            <span className="hidden sm:inline-block text-xs px-2.5 py-0.5 rounded-full bg-[#FFFDFB] border border-[#D8C7B4] text-[#965866]">
               Damascus Flowers Admin
             </span>
           </div>
@@ -468,7 +468,7 @@ export function AdminDashboardClient({
             <button
               type="button"
               onClick={loadAllAdminData}
-              className="p-2 rounded-xl bg-[#523A2B] hover:bg-[#644836] text-xs inline-flex items-center gap-1.5 cursor-pointer"
+              className="p-2 rounded-xl bg-[#FFFDFB] border border-[#D8C7B4] hover:bg-[#F5E1E4] text-xs inline-flex items-center gap-1.5 cursor-pointer"
               title="تحديث البيانات"
             >
               <RefreshCw className={`w-4 h-4 ${loadingData ? "animate-spin" : ""}`} />
@@ -478,7 +478,7 @@ export function AdminDashboardClient({
             <Link
               href="/"
               target="_blank"
-              className="px-3 py-2 rounded-xl bg-[#523A2B] hover:bg-[#644836] text-xs font-bold inline-flex items-center gap-1.5"
+              className="px-3 py-2 rounded-xl bg-[#FFFDFB] border border-[#D8C7B4] hover:bg-[#F5E1E4] text-xs font-bold inline-flex items-center gap-1.5"
             >
               <ExternalLink className="w-3.5 h-3.5" />
               <span>معاينة المتجر</span>

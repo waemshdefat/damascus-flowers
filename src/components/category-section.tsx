@@ -40,35 +40,36 @@ export function CategorySection({
 
   return (
     <section id={`cat-${slug}`} className="space-y-4 sm:space-y-6 scroll-mt-28">
-      {/* Elegant category banner: name + description over the category image */}
-      <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#EAE0D3] bg-[#3D2B1F]">
-        <img
-          src={heroImage}
-          alt={nameAr}
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-l from-[#2A1C13]/85 via-[#2A1C13]/55 to-[#2A1C13]/20" />
-        <div className="relative p-5 sm:p-8 min-h-[150px] sm:min-h-[190px] flex flex-col justify-end gap-2">
-          <span className="inline-flex w-fit items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FAF7F2]/90 text-[#3D2B1F] text-[11px] sm:text-xs font-bold">
+      {/* Elegant light category banner: cream card, image on one side, brown text */}
+      <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#EAE0D3] bg-[#FFFDFB] shadow-xs flex flex-row items-stretch">
+        <div className="flex-1 p-4 sm:p-8 flex flex-col justify-center gap-2 min-w-0">
+          <span className="inline-flex w-fit items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F5E8EA] text-[#965866] text-[11px] sm:text-xs font-bold border border-[#E8C5CB]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#B8965A]" />
             {products.length} منتج
           </span>
-          <h2 className="text-xl sm:text-3xl font-extrabold text-[#FAF7F2] leading-tight">
+          <h2 className="text-lg sm:text-3xl font-extrabold text-[#3D2B1F] leading-tight">
             {nameAr}
           </h2>
-          <p className="text-xs sm:text-sm text-[#EADFD0] leading-relaxed line-clamp-2 max-w-2xl">
+          <p className="text-xs sm:text-sm text-[#695244] leading-relaxed line-clamp-3 max-w-2xl">
             {descriptionAr}
           </p>
           {showViewAll && (
             <Link
               href={`/category/${slug}`}
-              className="mt-1 inline-flex w-fit items-center gap-1.5 text-xs sm:text-sm font-bold text-[#F5E1E4] hover:text-white"
+              className="mt-1 inline-flex w-fit items-center gap-1.5 text-xs sm:text-sm font-bold text-[#965866] hover:text-[#3D2B1F]"
             >
               <span>عرض القسم كاملًا</span>
               <ArrowLeft className="w-3.5 h-3.5" />
             </Link>
           )}
+        </div>
+        <div className="w-28 sm:w-56 lg:w-72 shrink-0 bg-white border-r border-[#F1E9DF]">
+          <img
+            src={heroImage}
+            alt={nameAr}
+            loading="lazy"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
 

@@ -421,7 +421,7 @@ export function AdminDashboardClient({
             <button
               type="submit"
               disabled={loggingIn}
-              className="w-full py-4 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-[#FAF7F2] font-bold text-sm transition cursor-pointer"
+              className="w-full py-4 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs font-bold text-sm transition cursor-pointer"
             >
               {loggingIn ? "جاري التحقق..." : "دخول آمن إلى لوحة التحكم"}
             </button>
@@ -498,7 +498,7 @@ export function AdminDashboardClient({
 
       {/* Toast Banner */}
       {toast && (
-        <div className="fixed bottom-5 right-5 z-50 px-5 py-3.5 rounded-2xl bg-[#3D2B1F] text-white text-xs sm:text-sm font-bold shadow-xl flex items-center gap-2">
+        <div className="fixed bottom-5 right-5 z-50 px-5 py-3.5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs sm:text-sm font-bold shadow-xl flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>{toast}</span>
         </div>
@@ -540,7 +540,7 @@ export function AdminDashboardClient({
             onClick={() => setActiveTab("orders")}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition cursor-pointer ${
               activeTab === "orders"
-                ? "bg-[#3D2B1F] text-white"
+                ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                 : "text-[#5C4332] hover:bg-[#F3ECE2]"
             }`}
           >
@@ -553,7 +553,7 @@ export function AdminDashboardClient({
             onClick={() => setActiveTab("products")}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition cursor-pointer ${
               activeTab === "products"
-                ? "bg-[#3D2B1F] text-white"
+                ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                 : "text-[#5C4332] hover:bg-[#F3ECE2]"
             }`}
           >
@@ -566,7 +566,7 @@ export function AdminDashboardClient({
             onClick={() => setActiveTab("delivery")}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition cursor-pointer ${
               activeTab === "delivery"
-                ? "bg-[#3D2B1F] text-white"
+                ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                 : "text-[#5C4332] hover:bg-[#F3ECE2]"
             }`}
           >
@@ -579,7 +579,7 @@ export function AdminDashboardClient({
             onClick={() => setActiveTab("settings")}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition cursor-pointer ${
               activeTab === "settings"
-                ? "bg-[#3D2B1F] text-white"
+                ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                 : "text-[#5C4332] hover:bg-[#F3ECE2]"
             }`}
           >
@@ -597,7 +597,7 @@ export function AdminDashboardClient({
                 onClick={() => setStatusFilter("all")}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-bold cursor-pointer ${
                   statusFilter === "all"
-                    ? "bg-[#3D2B1F] text-white"
+                    ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                     : "bg-[#FFFDFB] border border-[#E6DDD0] text-[#5C4332]"
                 }`}
               >
@@ -610,7 +610,7 @@ export function AdminDashboardClient({
                   onClick={() => setStatusFilter(key)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-bold cursor-pointer ${
                     statusFilter === key
-                      ? "bg-[#3D2B1F] text-white"
+                      ? "bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs"
                       : "bg-[#FFFDFB] border border-[#E6DDD0] text-[#5C4332]"
                   }`}
                 >
@@ -816,7 +816,7 @@ export function AdminDashboardClient({
                     sortOrder: 20,
                   })
                 }
-                className="px-5 py-3 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
+                className="px-5 py-3 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs sm:text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
               >
                 <Plus className="w-4 h-4" />
                 <span>إضافة منتج جديد</span>
@@ -1002,7 +1002,7 @@ export function AdminDashboardClient({
                     <span className="text-xs font-bold text-[#3D2B1F]">
                       صور المنتج
                     </span>
-                    <label className="px-4 py-2 rounded-xl bg-[#3D2B1F] text-white text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer">
+                    <label className="px-4 py-2 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs font-bold inline-flex items-center gap-1.5 cursor-pointer">
                       <Upload className="w-3.5 h-3.5" />
                       <span>
                         {uploadingImage
@@ -1141,7 +1141,7 @@ export function AdminDashboardClient({
 
                 <button
                   type="submit"
-                  className="px-7 py-3.5 rounded-2xl bg-[#3D2B1F] text-white text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
+                  className="px-7 py-3.5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
                 >
                   <Save className="w-4 h-4" />
                   <span>حفظ بيانات المنتج</span>
@@ -1376,7 +1376,7 @@ export function AdminDashboardClient({
 
               <button
                 type="submit"
-                className="px-7 py-3.5 rounded-2xl bg-[#3D2B1F] text-white text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
+                className="px-7 py-3.5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
               >
                 <Save className="w-4 h-4" />
                 <span>حفظ إعدادات التوصيل والدفع</span>
@@ -1554,7 +1554,7 @@ export function AdminDashboardClient({
 
               <button
                 type="submit"
-                className="px-7 py-3.5 rounded-2xl bg-[#3D2B1F] text-white text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
+                className="px-7 py-3.5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm font-bold inline-flex items-center gap-2 cursor-pointer"
               >
                 <Save className="w-4 h-4" />
                 <span>حفظ الإعدادات</span>
@@ -1573,7 +1573,7 @@ export function AdminDashboardClient({
                 </p>
                 <a
                   href="/api/admin/backup"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[#3D2B1F] text-white text-xs font-bold"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs font-bold"
                 >
                   <Download className="w-4 h-4" />
                   <span>تنزيل نسخة احتياطية فورية (Backup JSON)</span>

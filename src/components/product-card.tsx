@@ -137,7 +137,7 @@ export function ProductCard({
                   image: primaryImg,
                 })
               }
-              className="flex-1 py-2.5 px-2.5 sm:px-3.5 rounded-xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] text-[11px] sm:text-sm font-bold inline-flex items-center justify-center gap-1.5 sm:gap-2 transition cursor-pointer disabled:cursor-not-allowed"
+              className="flex-1 py-2.5 px-2.5 sm:px-3.5 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#F3ECE2] disabled:text-[#9A8474] disabled:border-[#E6DDD0] text-[11px] sm:text-sm font-bold inline-flex items-center justify-center gap-1.5 sm:gap-2 transition cursor-pointer disabled:cursor-not-allowed"
             >
               <ShoppingBag className="w-4 h-4 shrink-0" />
               <span>{product.inStock ? "أضف للسلة" : "غير متوفر"}</span>

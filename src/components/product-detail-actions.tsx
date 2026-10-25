@@ -194,7 +194,7 @@ export function ProductDetailInteractive({
                 type="button"
                 disabled={!product.inStock}
                 onClick={handleAdd}
-                className="py-4 px-5 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
+                className="py-4 px-5 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#F3ECE2] disabled:text-[#9A8474] disabled:border-[#E6DDD0] font-bold text-sm sm:text-base inline-flex items-center justify-center gap-2 transition cursor-pointer"
               >
                 {addedFeedback ? (
                   <>

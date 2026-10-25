@@ -273,7 +273,7 @@ export function CheckoutClient({
         <div className="pt-2 flex flex-wrap gap-3">
           <Link
             href="/shop"
-            className="px-6 py-3 rounded-xl bg-[#3D2B1F] text-[#FAF7F2] text-sm font-bold hover:bg-[#523A2B] transition"
+            className="px-6 py-3 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-sm font-bold hover:bg-[#523A2B] transition"
           >
             متابعة التسوق
           </Link>
@@ -484,7 +484,7 @@ export function CheckoutClient({
                             false
                           )
                         }
-                        className="px-3.5 py-2 rounded-xl bg-[#3D2B1F] hover:bg-[#523A2B] text-white text-xs font-bold inline-flex items-center gap-1 shrink-0 cursor-pointer"
+                        className="px-3.5 py-2 rounded-xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs text-xs font-bold inline-flex items-center gap-1 shrink-0 cursor-pointer"
                       >
                         <PlusCircle className="w-3.5 h-3.5" />
                         <span>إضافة</span>
@@ -845,7 +845,7 @@ export function CheckoutClient({
         <button
           type="submit"
           disabled={submitting || items.length === 0}
-          className="w-full py-4 px-6 rounded-2xl bg-[#3D2B1F] hover:bg-[#523A2B] disabled:bg-[#C9BBAE] text-[#FAF7F2] font-extrabold text-base transition shadow-md cursor-pointer disabled:cursor-not-allowed"
+          className="w-full py-4 px-6 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs disabled:bg-[#F3ECE2] disabled:text-[#9A8474] disabled:border-[#E6DDD0] font-extrabold text-base transition shadow-md cursor-pointer disabled:cursor-not-allowed"
         >
           {submitting
             ? "جاري تسجيل الطلب..."

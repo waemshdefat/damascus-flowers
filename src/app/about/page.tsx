@@ -101,7 +101,7 @@ export default async function AboutPage() {
       <div className="text-center flex flex-wrap justify-center gap-4">
         <Link
           href="/shop"
-          className="px-8 py-4 rounded-2xl bg-[#3D2B1F] text-[#FAF7F2] font-bold text-sm sm:text-base hover:bg-[#523A2B] transition"
+          className="px-8 py-4 rounded-2xl bg-[#FFFDFB] hover:bg-[#F5E1E4] text-[#3D2B1F] border border-[#D8C7B4] shadow-xs font-bold text-sm sm:text-base hover:bg-[#523A2B] transition"
         >
           تصفح تشكيلة الزهور والهدايا
         </Link>
